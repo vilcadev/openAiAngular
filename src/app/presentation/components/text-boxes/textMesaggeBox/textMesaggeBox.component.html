@@ -1,7 +1,7 @@
 <form
 [formGroup]="form"
 (ngSubmit)="handleSubmit()"
-class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4"
+class="flex flex-row items-center h-16 rounded-xl w-full px-40"
 >
 
 
@@ -10,7 +10,7 @@ class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4"
     <input
     type="text"
     autofocus
-    class="flex w-full border rounded-xl text-gray-800 focus:outline-none focus:border-indigo-300 pl-4 h-10"
+    class="bg-transparent flex w-full border rounded-xl  border-gray-400 focus:border-gray-400 pl-4 h-12"
     [placeholder]="placeholder"
     formControlName="prompt"
     [autocomplete]="disableCorrections ? 'on':'off'"

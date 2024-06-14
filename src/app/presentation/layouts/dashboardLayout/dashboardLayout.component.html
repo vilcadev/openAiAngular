@@ -1,13 +1,15 @@
-<main class="flex flex-row mt-7">
+<main class="flex flex-row ">
   <nav
-    class="hidden sm:flex flex-col ml-5 w-[370px] min-h-[calc(100vh-3.0rem)] bg-white bg-opacity-10 p-5 rounded-3xl"
+    class="hidden sm:flex flex-col w-[370px] min-h-[calc(100vh)] bg-opacity-10 p-5"
+    style="background-color: #171717;"
   >
-    <h1
-      class="font-bold text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 bg-clip-text text-transparent"
-    >
-      AngularGPT<span class="text-indigo-500">.</span>
-    </h1>
-    <span class="text-xl">Bienvenido</span>
+  <div class="flex items-center">
+    <div class=" flex justify-center items-center"><img src="assets/imgs/chatgptLogo-white.png" alt="img" style="width: 40px;"></div>
+
+    <span class="text-white text-lg font-semibold">VilcadevGPT</span>
+
+  </div>
+
 
     <div class="border-gray-700 border my-3"></div>
 
@@ -24,9 +26,9 @@
     <!-- End Nav Links -->
 
   <section
-    class="mx-3 sm:mx-20 flex flex-col w-full h-[calc(100vh-50px)] bg-white bg-opacity-10 p-5 rounded-3xl"
+    class="flex flex-col w-full h-[calc(100vh-50px)]"
   >
-    <div class="flex h-full flex-row">
+    <div class="flex h-full flex-row items-center">
       <div class="flex flex-col flex-auto p-1">
         <router-outlet />
       </div>
