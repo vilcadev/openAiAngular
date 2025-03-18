@@ -3,7 +3,7 @@ import { environment } from "environments/environment";
 
   export async function* prosConsStreamUseCase( prompt:string,abortSignal:AbortSignal ) {
     try {
-      const resp = await fetch(`${environment.backendApi}/pros-cons-discusser-stream`,{
+      const resp = await fetch(`${environment.backendApi}/character-stream`,{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
